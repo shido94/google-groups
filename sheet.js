@@ -1,6 +1,6 @@
 const { google } = require('googleapis')
 const credentials = require(`./credentials.json`)
-const SPREADSHEET_ID = `1E6EX07JokjlRy1QlMCQQq15glSZdfokBeuyQKOHE0BI`;
+const SPREADSHEET_ID = ``;
 
 const SCOPE = ['https://www.googleapis.com/auth/spreadsheets'];
 const positionIndex = {
@@ -9,22 +9,6 @@ const positionIndex = {
 };
 
 const USER_ENTERED = 'USER_ENTERED';
-const newEvent = {
-    'User Id': 1,
-    'Builders Email': 'rupesh@infoxen.com',
-    'First Name': 'Rupesh',
-    'Last Name': 'Yadav',
-    'Cancelled': 'On-trial',
-    'Coach Id': '808',
-    'Coach Email': 'rupesh@gmail.com',
-    'Joined Date': '03/12/2019 7:08:11',
-    'Exclude/Include/Automatic on Email CCs': '',
-    'They (if Active) + their Active Upteam': 'rupesh@forwardmatter.com',
-    'Coach Name': 'Rupesh Yadav',
-    'Email Address': 'rupesh@forwardmatter.com',
-    'Scheduled Date': '12/03/2019 00:00:00',
-    'Mail Merge Status': 'MAIL SENT 03-Dec-19 5:45 PM'
-}
 
 const client = new google.auth.JWT(
     credentials.client_email,

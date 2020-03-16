@@ -4,7 +4,7 @@ const GROUP_SCOPE = [
   'https://www.googleapis.com/auth/admin.directory.group'
 ];
 
-const clientOptions = 'admin@connectcollaborative.com'
+const clientOptions = ''
 
 const jwt = new google.auth.JWT(
   credentials.client_email,
@@ -14,7 +14,7 @@ const jwt = new google.auth.JWT(
   clientOptions
 );
 
-const userEmail = 'fellow-collaborators@connectcollaborative-195402.iam.gserviceaccount.com';
+const userEmail = '';
 
 /**
  * Authorised JWT
